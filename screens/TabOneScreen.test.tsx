@@ -1,4 +1,5 @@
 import { render } from '@testing-library/react-native';
+
 import TabOneScreen from './TabOneScreen';
 
 describe('TabOneScreen', () => {
@@ -11,6 +12,6 @@ describe('TabOneScreen', () => {
       const { queryByText } = renderTabOneScreen();
 
       expect(queryByText('Tab One')).not.toBeNull();
-    })
-  })
+    });
+  });
 });

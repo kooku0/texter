@@ -4,7 +4,7 @@ import Sample from './Sample';
 
 describe('Sample', () => {
   const renderSample = () => render((
-    <Sample text={given.text}/>
+    <Sample text={given.text} />
   ));
 
   context('test에 전달된 값이', () => {
@@ -14,6 +14,6 @@ describe('Sample', () => {
       const { queryByText } = renderSample();
 
       expect(queryByText('hello')).not.toBeNull();
-    })
+    });
   });
 });
