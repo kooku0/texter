@@ -1,4 +1,4 @@
-import { Text, View } from './Themed';
+import { Text, View } from 'react-native';
 
 interface Props {
   text: string;
