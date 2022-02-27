@@ -1,6 +1,9 @@
 <div align="center">
   <h1>Texter</h1>
   <p>
+    <a href="https://github.com/kooku0/texter/releases">
+      <img src="https://img.shields.io/github/v/release/kooku0/texter" alt="releases" />
+    </a>
     <a href="https://github.com/expo/expo">
       <img src="https://img.shields.io/badge/Runs%20with%20Expo-000.svg?style=flat&logo=EXPO&labelColor=ffffff&logoColor=000" alt="runs with expo"/>
     </a>

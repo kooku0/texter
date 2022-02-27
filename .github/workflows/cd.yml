@@ -3,7 +3,7 @@ name: CD
 on:
   push:
     branches:
-      - cd-setting
+      - main
 jobs:
   publish:
     runs-on: ubuntu-latest
