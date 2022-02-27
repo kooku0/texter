@@ -12,36 +12,37 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Use Node.js 14.x
-        uses: actions/setup-node@v1
+      - name: 🏗 Setup Node
+        uses: actions/setup-node@v2
         with:
-          node-version: 14.x
+          node-version: 16.x
+          cache: yarn
 
-      - name: Install dependencies
+      - name: 📦 Install dependencies
         run: yarn install --immutable --immutable-cache
 
-      - name: Check Unit Test
+      - name: 🧪 Check Unit Test
         run: yarn test
 
-      - name: Check Lint
+      - name: 🧪 Check Lint
         run: yarn lint
 
   set-codecov-test-coverage:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Use Node.js 14.x
-        uses: actions/setup-node@v1
+      - name: 🏗 Setup Node
+        uses: actions/setup-node@v2
         with:
-          node-version: 14.x
+          node-version: 16.x
 
-      - name: Install dependencies
+      - name: 📦 Install dependencies
         run: yarn install --immutable --immutable-cache
 
-      - name: Create Unit Test Coverage
+      - name: 🧪 Create Unit Test Coverage
         run: yarn test:coverage
 
-      - name: Set unit test coverage
+      - name: 📝 Set unit test coverage
         uses: codecov/codecov-action@v2
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
