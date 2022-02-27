@@ -8,8 +8,7 @@ if [ ! -z "$VERSION" ]; then
   auto changelog
 
   ## Publish App
-  git add .
-  git commit -m "Bump version to: %s [skip ci]"
+  npm version $VERSION -m "Bump version to: %s [skip ci]"
   expo publish --non-interactive
 
   ## Create GitHub Release
