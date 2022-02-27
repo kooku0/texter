@@ -27,4 +27,6 @@ jobs:
         run: yarn install --immutable --immutable-cache
 
       - name: 🚀 Publish app
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: yarn release
