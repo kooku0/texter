@@ -2,11 +2,12 @@ import styled from '@emotion/native';
 
 interface Props {
   text: string;
+  background: string;
 }
 
-function Card({ text }: Props) {
+function Card({ text, background }: Props) {
   return (
-    <CardWrapper>
+    <CardWrapper background={background} testID="card">
       <CardText>{text}</CardText>
     </CardWrapper>
   );
@@ -14,17 +15,19 @@ function Card({ text }: Props) {
 
 export default Card;
 
-const CardWrapper = styled.View`
+const CardWrapper = styled.View<{ background: string; }>`
   width: 100%;
   min-height: 480px;
-  background-color: #C0E9DC;
+  background-color: ${({ background }) => background};
   border-radius: 8px;
   justify-content: center;
   padding: 24px;
+  border: 1px solid #E5E8EC;
 `;
 
 const CardText = styled.Text`
   font-weight: 400;
   font-size: 24px;
   line-height: 32px;
+  color: black;
 `;

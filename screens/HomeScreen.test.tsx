@@ -8,8 +8,8 @@ describe('HomeScreen', () => {
   ));
 
   it('card가 보여야 한다.', () => {
-    const { getByText } = renderHomeScreen();
+    const { getAllByTestId } = renderHomeScreen();
 
-    expect(getByText('card')).not.toBeNull();
+    expect(getAllByTestId('card').length).toBeGreaterThan(0);
   });
 });
