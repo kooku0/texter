@@ -7,9 +7,9 @@ describe('HomeScreen', () => {
     <HomeScreen />
   ));
 
-  it('Home 문구가 보여야 한다.', () => {
-    const { queryByText } = renderHomeScreen();
+  it('card가 보여야 한다.', () => {
+    const { getByText } = renderHomeScreen();
 
-    expect(queryByText('Home')).not.toBeNull();
+    expect(getByText('card')).not.toBeNull();
   });
 });
