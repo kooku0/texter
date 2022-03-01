@@ -4,6 +4,8 @@ VERSION=`auto version`
 
 ## Support for label 'skip-release'
 if [ ! -z "$VERSION" ]; then
+  ## Fetch tags
+  git fetch --tags
   ## Update Changelog
   auto changelog
 

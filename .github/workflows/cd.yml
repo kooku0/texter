@@ -10,7 +10,6 @@ jobs:
     steps:
       - name: 🏗 Setup repo
         uses: actions/checkout@v2
-        run: git fetch --tags
 
       - name: 🏗 Setup Node
         uses: actions/setup-node@v2
