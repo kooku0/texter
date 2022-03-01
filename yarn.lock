@@ -6613,7 +6613,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fbjs@npm:^0.8.4":
+"fbjs@npm:^0.8.4, fbjs@npm:^0.8.9":
   version: 0.8.18
   resolution: "fbjs@npm:0.8.18"
   dependencies:
@@ -11012,6 +11012,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"prop-types@npm:15.5.10":
+  version: 15.5.10
+  resolution: "prop-types@npm:15.5.10"
+  dependencies:
+    fbjs: ^0.8.9
+    loose-envify: ^1.3.1
+  checksum: 3e928ad5afa5124d52a341a706170628e7b0caa9340515782be6a767261e6eb0e473116188bb8efbe9d9b62cb3c9501c71bf4ab7d34f2507294ee34c90de6964
+  languageName: node
+  linkType: hard
+
 "prop-types@npm:^15.6.0, prop-types@npm:^15.7.2, prop-types@npm:^15.8.1":
   version: 15.8.1
   resolution: "prop-types@npm:15.8.1"
@@ -11186,6 +11196,18 @@ __metadata:
     jscodeshift: ^0.11.0
     nullthrows: ^1.1.1
   checksum: 545d1e416be5bd0bc27a9bc4d58719317577fbcb38f80082857142f4946ba336df3f5fa3e87137709691acd809ee46e1f52834648399cb50219a70f441d6e6a3
+  languageName: node
+  linkType: hard
+
+"react-native-deck-swiper@npm:^2.0.5":
+  version: 2.0.5
+  resolution: "react-native-deck-swiper@npm:2.0.5"
+  dependencies:
+    prop-types: 15.5.10
+  peerDependencies:
+    react: ^16.0.0-beta.5
+    react-native: ^0.49.1
+  checksum: 9e8d8295228fc3cdbbe2ab22891bd270106c7bfd6b814d5f1889dfac9f2d8247832afe83ce25cfe59c5669e9f93d7f53796591fb7187c7281e14b03f693b58a1
   languageName: node
   linkType: hard
 
@@ -12864,6 +12886,7 @@ __metadata:
     react: 17.0.1
     react-dom: 17.0.1
     react-native: 0.64.3
+    react-native-deck-swiper: ^2.0.5
     react-native-safe-area-context: 3.3.2
     react-native-screens: ~3.10.1
     react-native-web: 0.17.1
