@@ -31,5 +31,5 @@ function CardStack<CardProps>(props: Props<CardProps>, ref: ForwardedRef<Swiper<
   );
 }
 
-export default forwardRef<any, any>(CardStack);
+export default forwardRef<Swiper<any>, any>(CardStack);
 
