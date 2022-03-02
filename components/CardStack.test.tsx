@@ -5,7 +5,7 @@ import { render } from '@testing-library/react-native';
 import CardStack from './CardStack';
 
 describe('CardStack', () => {
-  const cards = [{ text: 'card1' }];
+  const cards = [{ text: 'card1' }, { text: 'card2' }];
   const mockComponent = ({ text }: { text: string }) => (
     <View>
       <Text>{text}</Text>

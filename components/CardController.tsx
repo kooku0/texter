@@ -17,7 +17,7 @@ function CardController({ onPressPass, onPressStore }: Props) {
         onPress={onPressPass}
       >
         <Controller
-          source={require('../assets/images/pass.png')}
+          source={{ uri: require('../assets/images/pass.png') }}
           resizeMode={'contain'}
         />
       </TouchableOpacity>
@@ -27,7 +27,7 @@ function CardController({ onPressPass, onPressStore }: Props) {
         onPress={onPressStore}
       >
         <Controller
-          source={require('../assets/images/store.png')}
+          source={{ uri: require('../assets/images/store.png') }}
           resizeMode={'contain'}
         />
       </TouchableOpacity>
