@@ -1,6 +1,5 @@
-import Swiper from 'react-native-deck-swiper';
-
 import React, { ForwardedRef, forwardRef, ReactElement } from 'react';
+import Swiper from 'react-native-deck-swiper';
 
 interface Props<CardProps> {
   cards: CardProps[];
@@ -20,7 +19,7 @@ function CardStack<CardProps>(props: Props<CardProps>, ref: ForwardedRef<Swiper<
       renderCard={(cardProps) => Card(cardProps)}
       stackSize={3}
       stackSeparation={15}
-      backgroundColor="white"
+      backgroundColor="transparent"
       animateOverlayLabelsOpacity
       animateCardOpacity
       swipeBackCard
@@ -32,4 +31,3 @@ function CardStack<CardProps>(props: Props<CardProps>, ref: ForwardedRef<Swiper<
 }
 
 export default forwardRef<Swiper<any>, any>(CardStack);
-
