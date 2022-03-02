@@ -12,6 +12,7 @@ function CardController({ onPressPass, onPressStore }: Props) {
   return (
     <ControllerWrapper accessibilityIgnoresInvertColors={false}>
       <TouchableOpacity
+        testID="pass-button"
         accessibilityRole="button"
         onPress={onPressPass}
       >
@@ -21,6 +22,7 @@ function CardController({ onPressPass, onPressStore }: Props) {
         />
       </TouchableOpacity>
       <TouchableOpacity
+        testID="store-button"
         accessibilityRole="button"
         onPress={onPressStore}
       >

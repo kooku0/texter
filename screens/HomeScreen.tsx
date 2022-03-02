@@ -1,13 +1,17 @@
-import { View } from 'react-native';
+import styled from '@emotion/native';
 
 import CardContainer from '../components/CardContainer';
 
 function HomeScreen() {
   return (
-    <View style={{ flex: 1 }}>
+    <Wrapper>
       <CardContainer />
-    </View>
+    </Wrapper>
   );
 }
 
 export default HomeScreen;
+
+const Wrapper = styled.View`
+  flex: 1;
+`;

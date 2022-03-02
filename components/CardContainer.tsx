@@ -1,8 +1,8 @@
 
+import { useRef } from 'react';
 import Swiper from 'react-native-deck-swiper';
 
 import styled from '@emotion/native';
-import { useRef } from 'react';
 
 import Card from '../components/Card';
 import CardStack from '../components/CardStack';

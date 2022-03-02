@@ -1,6 +1,5 @@
-import Swiper from 'react-native-deck-swiper';
-
 import React, { ForwardedRef, forwardRef, ReactElement } from 'react';
+import Swiper from 'react-native-deck-swiper';
 
 interface Props<CardProps> {
   cards: CardProps[];
