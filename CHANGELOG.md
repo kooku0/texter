@@ -10,6 +10,18 @@
 
 ---
 
+# v1.2.0 (Thu Mar 03 2022)
+
+#### 🚀 Enhancement
+
+- [Feature] header 구현 [#12](https://github.com/kooku0/texter/pull/12) ([@kooku0](https://github.com/kooku0))
+
+#### Authors: 1
+
+- kooku ([@kooku0](https://github.com/kooku0))
+
+---
+
 # v1.1.1 (Wed Mar 02 2022)
 
 #### 🐛 Bug Fix
