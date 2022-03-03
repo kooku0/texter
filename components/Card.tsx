@@ -17,7 +17,7 @@ export default Card;
 
 const CardWrapper = styled.View<{ background: string; }>`
   width: 100%;
-  min-height: 400px;
+  height: 100%;
   background-color: ${({ background }) => background};
   border-radius: 8px;
   justify-content: center;
