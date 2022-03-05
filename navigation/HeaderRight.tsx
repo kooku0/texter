@@ -39,7 +39,6 @@ export default HeaderRight;
 const Wrapper = styled.View`
   display: flex;
   flex-direction: row;
-  margin-right: 16px;
 `;
 
 const IconImage = styled.Image`

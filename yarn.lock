@@ -11022,7 +11022,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prop-types@npm:^15.6.0, prop-types@npm:^15.7.2, prop-types@npm:^15.8.1":
+"prop-types@npm:^15.6.0, prop-types@npm:^15.6.2, prop-types@npm:^15.7.2, prop-types@npm:^15.8.1":
   version: 15.8.1
   resolution: "prop-types@npm:15.8.1"
   dependencies:
@@ -11208,6 +11208,27 @@ __metadata:
     react: ^16.0.0-beta.5
     react-native: ^0.49.1
   checksum: 9e8d8295228fc3cdbbe2ab22891bd270106c7bfd6b814d5f1889dfac9f2d8247832afe83ce25cfe59c5669e9f93d7f53796591fb7187c7281e14b03f693b58a1
+  languageName: node
+  linkType: hard
+
+"react-native-iphone-x-helper@npm:^1.0.3":
+  version: 1.3.1
+  resolution: "react-native-iphone-x-helper@npm:1.3.1"
+  peerDependencies:
+    react-native: ">=0.42.0"
+  checksum: 024376646009a966e33e12fc2358751830818b0fb73b1c601a64eb5e490d2dc43eec23668991b985a8c412a84d087f20eb45bb9b593567c08b66e741b7bddda5
+  languageName: node
+  linkType: hard
+
+"react-native-keyboard-aware-scroll-view@npm:^0.9.5":
+  version: 0.9.5
+  resolution: "react-native-keyboard-aware-scroll-view@npm:0.9.5"
+  dependencies:
+    prop-types: ^15.6.2
+    react-native-iphone-x-helper: ^1.0.3
+  peerDependencies:
+    react-native: ">=0.48.4"
+  checksum: 5eec2aedb886213dfed4c8428a443b565dce80ba9fcf5897171e4c8829d4dd64c5011ac004d93f29adfc83ad6f88c2838d1a5b45255dc4a49bd1c0a169245800
   languageName: node
   linkType: hard
 
@@ -12887,6 +12908,7 @@ __metadata:
     react-dom: 17.0.1
     react-native: 0.64.3
     react-native-deck-swiper: ^2.0.5
+    react-native-keyboard-aware-scroll-view: ^0.9.5
     react-native-safe-area-context: 3.3.2
     react-native-screens: ~3.10.1
     react-native-web: 0.17.1

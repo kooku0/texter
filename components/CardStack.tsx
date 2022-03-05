@@ -36,10 +36,10 @@ function CardStack<CardProps>(props: Props<CardProps>, ref: ForwardedRef<Swiper<
 export default forwardRef<Swiper<any>, any>(CardStack);
 
 const CardStyle = css`
-  top: 24;
-  left: 16;
-  bottom: 60;
-  right: 16;
+  top: 24px;
+  left: 16px;
+  bottom: 60px;
+  right: 16px;
   width: auto;
   height: auto;
 `;

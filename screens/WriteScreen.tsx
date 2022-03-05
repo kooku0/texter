@@ -1,18 +1,15 @@
-import { Text } from 'react-native';
 
-import styled from '@emotion/native';
+import { View } from 'react-native';
 
+import WriteContainer from '../container/WriteContainer';
+import { styles } from '../styles/common';
 
 function WriteScreen() {
   return (
-    <Wrapper>
-      <Text>글쓰기</Text>
-    </Wrapper>
+    <View style={styles.container}>
+      <WriteContainer />
+    </View>
   );
 }
 
 export default WriteScreen;
-
-const Wrapper = styled.View`
-  flex: 1;
-`;
