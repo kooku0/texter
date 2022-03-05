@@ -15,5 +15,5 @@ if [ ! -z "$VERSION" ]; then
 
   ## Create GitHub Release
   git push --follow-tags --set-upstream origin $branch
-  auto shipit
+  auto release
 fi
