@@ -146,7 +146,7 @@ module.exports = {
       2,
       {
         testIdAttribute: ['testID'],
-        testIdPattern: '^([a-z|A-Z|-]*)?$',
+        testIdPattern: '^([./a-zA-Z0-9$_-]*)?$',
       },
     ],
     'testing-library/prefer-screen-queries': 'off',

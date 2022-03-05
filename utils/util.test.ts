@@ -52,7 +52,7 @@ describe('checkRefNull', () => {
 
   context('ref.current가 null이 아니면', () => {
     it('callback이 호출되어야 한다.',() => {
-      const element = document.createElement('div');
+      const element = jest.fn();
       const callback = jest.fn();
       const ref = { current: element };
 
