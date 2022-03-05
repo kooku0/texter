@@ -1,3 +1,15 @@
+# (Sat Mar 05 2022)
+
+#### 🐛 Bug Fix
+
+- [Fix] release command [#13](https://github.com/kooku0/texter/pull/13) ([@kooku0](https://github.com/kooku0))
+
+#### Authors: 1
+
+- kooku ([@kooku0](https://github.com/kooku0))
+
+---
+
 # v1.2.0 (Thu Mar 03 2022)
 
 #### 🚀 Enhancement
