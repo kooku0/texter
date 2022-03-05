@@ -1,3 +1,15 @@
+# v1.3.0 (Sat Mar 05 2022)
+
+#### 🚀 Enhancement
+
+- [Feature] 글쓰기 screen ui [#14](https://github.com/kooku0/texter/pull/14) ([@kooku0](https://github.com/kooku0))
+
+#### Authors: 1
+
+- kooku ([@kooku0](https://github.com/kooku0))
+
+---
+
 # (Sat Mar 05 2022)
 
 #### 🐛 Bug Fix
