@@ -1,3 +1,15 @@
+# v1.3.1 (Fri Mar 11 2022)
+
+#### 🐛 Bug Fix
+
+- [Env] firebase 환경변수 셋팅 [#16](https://github.com/kooku0/texter/pull/16) ([@kooku0](https://github.com/kooku0))
+
+#### Authors: 1
+
+- kooku ([@kooku0](https://github.com/kooku0))
+
+---
+
 # v1.4.0 (Fri Mar 11 2022)
 
 #### 🚀 Enhancement
