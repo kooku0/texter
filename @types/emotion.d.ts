@@ -1,6 +1,6 @@
 import '@emotion/react';
 
-import theme from '../styles/colors';
+import theme from '../src/styles/colors';
 
 declare module '@emotion/react' {
   type CustomTheme = typeof theme.light;

@@ -13,7 +13,7 @@ module.exports = {
   },
   transform: {
     '^.+\\.js$': 'babel-jest',
-    '^[./a-zA-Z0-9$_-]+\\.(bmp|gif|jpg|jpeg|png|psd|svg|webp)$': '<rootDir>/test/mediaFileTransformer.js',
+    '^[./a-zA-Z0-9$_-]+\\.(bmp|gif|jpg|jpeg|png|psd|svg|webp)$': '<rootDir>/src/test/mediaFileTransformer.js',
   },
   testPathIgnorePatterns: [
     'node_modules',
