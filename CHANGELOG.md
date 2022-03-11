@@ -1,3 +1,15 @@
+# v1.4.0 (Fri Mar 11 2022)
+
+#### 🚀 Enhancement
+
+- [Feature] 글쓰기 저장 및 불러오기 [#15](https://github.com/kooku0/texter/pull/15) ([@kooku0](https://github.com/kooku0))
+
+#### Authors: 1
+
+- kooku ([@kooku0](https://github.com/kooku0))
+
+---
+
 # v1.2.1 (Fri Mar 11 2022)
 
 #### ⚠️ Pushed to `main`
