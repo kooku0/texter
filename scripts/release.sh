@@ -6,11 +6,12 @@ VERSION=`auto version`
 if [ ! -z "$VERSION" ]; then
   ## Fetch tags
   git fetch --tags
+
   ## Update Changelog
+  auto version
   auto changelog
 
   ## Publish App
-  auto version
   expo publish --non-interactive
 
   ## Create GitHub Release
