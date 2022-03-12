@@ -153,5 +153,6 @@ module.exports = {
     'testing-library/prefer-screen-queries': 'off',
     'testing-library/prefer-presence-queries': 'off',
     'react-native-a11y/has-valid-accessibility-ignores-invert-colors': 'off',
+    'react-hooks/rules-of-hooks': 'off',
   },
 };

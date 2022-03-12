@@ -1,45 +1,61 @@
-import { fireEvent, render } from '@testing-library/react-native';
+import { render } from '@testing-library/react-native';
 
 import React from 'react';
+
+import { sentenceResponse as FIXTURE_SENTENCES } from '@app/fixtures/setence';
+import useFetchSentences from '@app/hooks/api/useFetchSentences';
 
 import CardContainer from './CardContainer';
 
 jest.mock('@app/components/CardStack');
 jest.mock('@app/hooks/api/useFetchSentences');
-jest.mock('@app/hooks/useRefreshOnFocus');
+jest.mock('@app/hooks/useRefetchOnFocus');
 
 describe('CardContainer', () => {
-  const swipeLeft = jest.fn();
-  const swipeRight = jest.fn();
+  beforeEach(() => {
+    jest.clearAllMocks();
 
-  jest.spyOn(React, 'useRef').mockImplementation(() => ({
-    current: {
-      swipeLeft,
-      swipeRight,
-    },
-  }));
+    (useFetchSentences as jest.Mock).mockImplementation(() => ({
+      data: given.data,
+      isLoading: given.isLoading,
+      referch: given.refetch,
+      isRefetching: given.isRefetching,
+    }));
+  });
 
   const renderCardContainer = () => render((
     <CardContainer />
   ));
 
-  context('prass 버튼을 누르면', () => {
-    it('swipeLeft가 호출되어야 한다.', () => {
-      const { getByTestId } = renderCardContainer();
+  context('sentences fetching 중이라면', () => {
+    given('isLoading', () => true);
 
-      fireEvent.press(getByTestId('pass-button'));
+    it('spinner가 보여야 한다.', () => {
+      const { queryByTestId } = renderCardContainer();
 
-      expect(swipeLeft).toBeCalled();
+      expect(queryByTestId('spinner')).not.toBeNull();
     });
   });
 
-  context('store 버튼을 누르면', () => {
-    it('swipeRight가 호출되어야 한다.', () => {
-      const { getByTestId } = renderCardContainer();
+  context('sentences refetching 중이라면', () => {
+    given('isRefetching', () => true);
 
-      fireEvent.press(getByTestId('store-button'));
+    it('spinner가 보여야 한다.', () => {
+      const { queryByTestId } = renderCardContainer();
 
-      expect(swipeRight).toBeCalled();
+      expect(queryByTestId('spinner')).not.toBeNull();
+    });
+  });
+
+  context('sentences fetching이 완료되면', () => {
+    given('isLoading', () => false);
+    given('isRefetching', () => false);
+    given('data', () => [FIXTURE_SENTENCES]);
+
+    it('spinner가 보이지 않아야 한다.', () => {
+      const { queryByTestId } = renderCardContainer();
+
+      expect(queryByTestId('spinner')).toBeNull();
     });
   });
 });

@@ -1,7 +1,7 @@
 import { useRef } from 'react';
 import Swiper from 'react-native-deck-swiper';
 
-import { SentenceResponse } from '@app/api/model';
+import { SentenceResponse } from '@app/api/sentence/model';
 import Card from '@app/components/Card';
 import CardController from '@app/components/CardController';
 import CardStack from '@app/components/CardStack';
