@@ -9,7 +9,9 @@ if [ ! -z "$VERSION" ]; then
 
   ## Update Changelog
   auto version
-  auto changelog
+
+  ## Update version
+  npm version $VERSION -m "Bump version to: %s [skip ci]"
 
   ## Publish App
   expo publish --non-interactive
