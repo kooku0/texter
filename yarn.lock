@@ -13801,6 +13801,7 @@ __metadata:
     "@typescript-eslint/parser": ^5.12.1
     auto: ^10.32.6
     babel-plugin-inline-dotenv: ^1.6.0
+    babel-plugin-module-resolver: ^4.1.0
     eslint: ^8.10.0
     eslint-import-resolver-typescript: ^2.5.0
     eslint-plugin-flowtype: ^8.0.3

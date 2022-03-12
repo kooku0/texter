@@ -1,10 +1,10 @@
 import { TouchableOpacity } from 'react-native';
 
+import { RootStackParamList } from '../../@types/navigation';
+
 import styled from '@emotion/native';
 import { useNavigation } from '@react-navigation/native';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
-
-import { RootStackParamList } from '../../@types/navigation';
 
 type HomeScreenProps = NativeStackNavigationProp<RootStackParamList, 'Home'>;
 

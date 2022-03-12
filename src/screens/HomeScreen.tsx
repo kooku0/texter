@@ -1,6 +1,6 @@
-import styled from '@emotion/native';
+import CardContainer from '@app/containers/CardContainer';
 
-import CardContainer from '../container/CardContainer';
+import styled from '@emotion/native';
 
 function HomeScreen() {
   return (

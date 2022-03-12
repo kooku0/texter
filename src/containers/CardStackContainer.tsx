@@ -1,14 +1,14 @@
 import { useRef } from 'react';
 import Swiper from 'react-native-deck-swiper';
 
+import { SentenceResponse } from '@app/api/model';
+import Card from '@app/components/Card';
+import CardController from '@app/components/CardController';
+import CardStack from '@app/components/CardStack';
+import { checkRefNull } from '@app/utils';
+
 import styled from '@emotion/native';
 import randomColor from 'randomcolor';
-
-import { SentenceResponse } from '../api/model';
-import Card from '../components/Card';
-import CardController from '../components/CardController';
-import CardStack from '../components/CardStack';
-import { checkRefNull } from '../utils';
 
 interface Props {
   sentences: SentenceResponse[];

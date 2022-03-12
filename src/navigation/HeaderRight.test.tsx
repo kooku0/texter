@@ -1,7 +1,8 @@
-import { useNavigation } from '@react-navigation/native';
 import { fireEvent, render } from '@testing-library/react-native';
 
 import HeaderRight from './HeaderRight';
+
+import { useNavigation } from '@react-navigation/native';
 
 jest.mock('@react-navigation/native', () => ({
   useNavigation: jest.fn(),

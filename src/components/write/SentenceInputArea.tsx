@@ -1,8 +1,8 @@
 import { TouchableOpacity } from 'react-native';
 
-import styled from '@emotion/native';
+import InputMultiline from '@app/components/common/InputMultiline';
 
-import InputMultiline from '../common/InputMultiline';
+import styled from '@emotion/native';
 
 interface Props {
   sentence: string;

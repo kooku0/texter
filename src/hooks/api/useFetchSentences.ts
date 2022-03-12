@@ -1,6 +1,6 @@
 import { useQuery } from 'react-query';
 
-import { fetchSentences } from '../../api/sentence';
+import { fetchSentences } from '@app/api/sentence';
 
 function useFetchSentences() {
   const query = useQuery('sentences', fetchSentences);

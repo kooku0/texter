@@ -1,12 +1,12 @@
-import React from 'react';
-
 import { fireEvent, render } from '@testing-library/react-native';
+
+import React from 'react';
 
 import CardContainer from './CardContainer';
 
-jest.mock('../components/CardStack');
-jest.mock('../hooks/api/useFetchSentences');
-jest.mock('../hooks/useRefreshOnFocus');
+jest.mock('@app/components/CardStack');
+jest.mock('@app/hooks/api/useFetchSentences');
+jest.mock('@app/hooks/useRefreshOnFocus');
 
 describe('CardContainer', () => {
   const swipeLeft = jest.fn();

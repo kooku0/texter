@@ -1,18 +1,19 @@
 import * as React from 'react';
 
-import { NavigationContainer } from '@react-navigation/native';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import HomeScreen from '@app/screens/HomeScreen';
+import ModalScreen from '@app/screens/ModalScreen';
+import NotFoundScreen from '@app/screens/NotFoundScreen';
+import ProfileScreen from '@app/screens/ProfileScreen';
+import WriteScreen from '@app/screens/WriteScreen';
 
 import { RootStackParamList } from '../../@types/navigation';
-import HomeScreen from '../screens/HomeScreen';
-import ModalScreen from '../screens/ModalScreen';
-import NotFoundScreen from '../screens/NotFoundScreen';
-import ProfileScreen from '../screens/ProfileScreen';
-import WriteScreen from '../screens/WriteScreen';
 
 import HeaderRight from './HeaderRight';
 import LinkingConfiguration from './linking';
 import LogoTitle from './LogoTitle';
+
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 export default function Navigation() {
   return (
