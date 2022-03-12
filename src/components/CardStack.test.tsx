@@ -1,6 +1,6 @@
-import { Text, View } from 'react-native';
-
 import { render } from '@testing-library/react-native';
+
+import { Text, View } from 'react-native';
 
 import CardStack from './CardStack';
 

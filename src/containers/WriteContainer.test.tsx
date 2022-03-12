@@ -3,7 +3,7 @@ import { fireEvent, render } from '@testing-library/react-native';
 import WriteContainer from './WriteContainer';
 
 jest.mock('@react-navigation/native');
-jest.mock('../hooks/api/useAddSentence');
+jest.mock('@app/hooks/api/useAddSentence');
 
 describe('WriteContainer', () => {
   beforeEach(() => {

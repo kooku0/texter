@@ -1,10 +1,10 @@
-import { addDoc, collection, DocumentData, getDocs, query } from '@firebase/firestore';
-import { orderBy, Timestamp } from 'firebase/firestore';
-
-import { Sentence } from '../models/sentence';
-import { firestore } from '../services/firebase';
+import { Sentence } from '@app/models/sentence';
+import { firestore } from '@app/services/firebase';
 
 import { SentenceResponse } from './model';
+
+import { addDoc, collection, DocumentData, getDocs, query } from '@firebase/firestore';
+import { orderBy, Timestamp } from 'firebase/firestore';
 
 const COLECTION_NAME = 'sentences';
 const sentencesCol = collection(firestore, COLECTION_NAME);

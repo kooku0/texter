@@ -1,8 +1,8 @@
 
 import { View } from 'react-native';
 
-import WriteContainer from '../container/WriteContainer';
-import { styles } from '../styles/common';
+import WriteContainer from '@app/containers/WriteContainer';
+import { styles } from '@app/styles/common';
 
 function WriteScreen() {
   return (

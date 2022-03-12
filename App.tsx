@@ -2,15 +2,15 @@ import { focusManager, QueryClient, QueryClientProvider } from 'react-query';
 import { AppStateStatus, Platform } from 'react-native';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 
-import { ThemeProvider } from '@emotion/react';
-import { StatusBar } from 'expo-status-bar';
-
 import useAppState from './src/hooks/useAppState';
 import useCachedResources from './src/hooks/useCachedResources';
 import useColorScheme from './src/hooks/useColorScheme';
 import useOnlineManager from './src/hooks/useOnlineManager';
 import Navigation from './src/navigation';
 import colors from './src/styles/colors';
+
+import { ThemeProvider } from '@emotion/react';
+import { StatusBar } from 'expo-status-bar';
 
 function onAppStateChange(status: AppStateStatus) {
   if (Platform.OS !== 'web') {

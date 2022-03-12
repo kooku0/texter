@@ -2,8 +2,8 @@ import { render } from '@testing-library/react-native';
 
 import HomeScreen from './HomeScreen';
 
-jest.mock('../hooks/api/useFetchSentences');
-jest.mock('../hooks/useRefreshOnFocus');
+jest.mock('@app/hooks/api/useFetchSentences');
+jest.mock('@app/hooks/useRefreshOnFocus');
 
 describe('HomeScreen', () => {
   const renderHomeScreen = () => render((

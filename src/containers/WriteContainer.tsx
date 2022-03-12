@@ -2,17 +2,18 @@ import { useEffect, useState } from 'react';
 import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view';
 import Spinner from 'react-native-loading-spinner-overlay';
 
+import Button from '@app/components/common/Button';
+import Input from '@app/components/common/Input';
+import SentenceInputArea from '@app/components/write/SentenceInputArea';
+import useAddSentence from '@app/hooks/api/useAddSentence';
+import { Sentence } from '@app/models/sentence';
+import { styles } from '@app/styles/common';
+
+import { RootStackParamList } from '../../@types/navigation';
+
 import styled from '@emotion/native';
 import { useNavigation } from '@react-navigation/native';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
-
-import { RootStackParamList } from '../../@types/navigation';
-import Button from '../components/common/Button';
-import Input from '../components/common/Input';
-import SentenceInputArea from '../components/write/SentenceInputArea';
-import useAddSentence from '../hooks/api/useAddSentence';
-import { Sentence } from '../models/sentence';
-import { styles } from '../styles/common';
 
 type State = Sentence;
 type WriteScreenProps = NativeStackNavigationProp<RootStackParamList, 'Write'>;

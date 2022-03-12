@@ -4,7 +4,7 @@ import WriteScreen from './WriteScreen';
 
 jest.mock('react-native-keyboard-aware-scroll-view');
 jest.mock('@react-navigation/native');
-jest.mock('../hooks/api/useAddSentence');
+jest.mock('@app/hooks/api/useAddSentence');
 
 describe('WriteScreen', () => {
   const renderWriteScreen = () => render((

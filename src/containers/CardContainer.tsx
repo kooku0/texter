@@ -1,9 +1,9 @@
 import { View } from 'react-native';
 import Spinner from 'react-native-loading-spinner-overlay/lib';
 
-import useFetchSentences from '../hooks/api/useFetchSentences';
-import useRefreshOnFocus from '../hooks/useRefreshOnFocus';
-import { styles } from '../styles/common';
+import useFetchSentences from '@app/hooks/api/useFetchSentences';
+import useRefreshOnFocus from '@app/hooks/useRefreshOnFocus';
+import { styles } from '@app/styles/common';
 
 import CardStackContainer from './CardStackContainer';
 
