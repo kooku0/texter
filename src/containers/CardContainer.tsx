@@ -2,7 +2,7 @@ import { View } from 'react-native';
 import Spinner from 'react-native-loading-spinner-overlay/lib';
 
 import useFetchSentences from '@app/hooks/api/useFetchSentences';
-import useRefreshOnFocus from '@app/hooks/useRefreshOnFocus';
+import useRefetchOnFocus from '@app/hooks/useRefetchOnFocus';
 import { styles } from '@app/styles/common';
 
 import CardStackContainer from './CardStackContainer';
@@ -10,11 +10,11 @@ import CardStackContainer from './CardStackContainer';
 function CardContainer() {
   const { data, isLoading, refetch, isRefetching } = useFetchSentences();
 
-  useRefreshOnFocus(refetch);
+  useRefetchOnFocus(refetch);
 
   if (!data || isLoading || isRefetching) {
     return (
-      <View style={styles.container}>
+      <View style={styles.container} testID="spinner">
         <Spinner visible={isLoading} size="large" />
       </View>
     );

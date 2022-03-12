@@ -3,7 +3,7 @@ import { useCallback, useRef } from 'react';
 
 import { useFocusEffect } from '@react-navigation/native';
 
-function useRefreshOnFocus(refetch: () => void) {
+function useRefetchOnFocus(refetch: () => void) {
   const enabledRef = useRef(false);
 
   useFocusEffect(
@@ -17,4 +17,4 @@ function useRefreshOnFocus(refetch: () => void) {
   );
 }
 
-export default useRefreshOnFocus;
+export default useRefetchOnFocus;
