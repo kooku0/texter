@@ -3,8 +3,7 @@ import { firestore } from '@app/services/firebase';
 
 import { SentenceResponse } from './model';
 
-import { addDoc, collection, DocumentData, getDocs, query } from '@firebase/firestore';
-import { orderBy, Timestamp } from 'firebase/firestore';
+import { addDoc, collection, DocumentData, getDocs, orderBy, query, Timestamp } from '@firebase/firestore';
 
 const COLECTION_NAME = 'sentences';
 const sentencesCol = collection(firestore, COLECTION_NAME);
