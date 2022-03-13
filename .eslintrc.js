@@ -35,25 +35,6 @@ module.exports = {
     ecmaVersion: 12,
     sourceType: 'module',
   },
-  overrides: [
-    {
-      files: ['*.ts', '*.tsx'],
-      extends: [
-        'plugin:@typescript-eslint/eslint-recommended',
-        'plugin:@typescript-eslint/recommended',
-      ],
-      rules: {
-        '@typescript-eslint/no-explicit-any': 'off',
-        '@typescript-eslint/explicit-module-boundary-types': ['off'],
-        '@typescript-eslint/no-empty-interface': [
-          'error',
-          {
-            allowSingleExtends: true,
-          },
-        ],
-      },
-    },
-  ],
   settings: {
     'import/resolver': {
       typescript: {

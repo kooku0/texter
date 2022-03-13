@@ -4,6 +4,7 @@ import HomeScreen from './HomeScreen';
 
 jest.mock('@app/hooks/api/useFetchSentences');
 jest.mock('@app/hooks/useRefetchOnFocus');
+jest.mock('@app/components/CardStack');
 
 describe('HomeScreen', () => {
   const renderHomeScreen = () => render((
@@ -11,8 +12,8 @@ describe('HomeScreen', () => {
   ));
 
   it('card가 보여야 한다.', () => {
-    const { getAllByTestId } = renderHomeScreen();
+    const { queryByTestId } = renderHomeScreen();
 
-    expect(getAllByTestId('card').length).toBeGreaterThan(0);
+    expect(queryByTestId('cardStack')).not.toBeNull();
   });
 });
