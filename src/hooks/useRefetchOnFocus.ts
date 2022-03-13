@@ -1,4 +1,3 @@
-
 import { useCallback, useRef } from 'react';
 
 import { useFocusEffect } from '@react-navigation/native';
