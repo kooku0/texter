@@ -18,4 +18,7 @@ module.exports = {
   testPathIgnorePatterns: [
     'node_modules',
   ],
+  coveragePathIgnorePatterns: [
+    '<rootDir>/src/hooks/useRefetchOnFocus.ts',
+  ],
 };
