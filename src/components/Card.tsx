@@ -1,14 +1,21 @@
+import { ScrollView, Text, TouchableWithoutFeedback } from 'react-native';
+
+import { Sentence } from '@app/models/sentence';
+
 import styled from '@emotion/native';
 
-interface Props {
-  text: string;
-  background: string;
-}
+type Props = Sentence;
 
-function Card({ text, background }: Props) {
+function Card({ sentence, title, link }: Props) {
   return (
-    <CardWrapper background={background} testID="card">
-      <CardText>{text}</CardText>
+    <CardWrapper background="#C8DCEB" testID="card">
+      <ScrollView>
+        <TouchableWithoutFeedback accessibilityRole="button">
+          <CardText>{sentence}</CardText>
+        </TouchableWithoutFeedback>
+      </ScrollView>
+      <Text>{title}</Text>
+      <Text>{link}</Text>
     </CardWrapper>
   );
 }
