@@ -3794,13 +3794,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/randomcolor@npm:^0":
-  version: 0.5.6
-  resolution: "@types/randomcolor@npm:0.5.6"
-  checksum: b82fec1fc4d74fa9d777ea694cbe9f2b9d275135a6e97905d18d7b8624c92b41e45aec1b17ede43e37db103a1d63c8b0cb24d8762e768c776c3aefbf4ed6cf8d
-  languageName: node
-  linkType: hard
-
 "@types/react-dom@npm:>=16.9.0":
   version: 17.0.13
   resolution: "@types/react-dom@npm:17.0.13"
@@ -11959,13 +11952,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"randomcolor@npm:^0.6.2":
-  version: 0.6.2
-  resolution: "randomcolor@npm:0.6.2"
-  checksum: 539345c0289f7c52ffd8486e61231e19ccc40b1c4ab9c15594f20a2773b71a9317e0cc8b756160fc8a678ace9ed1e96a8ac90346b2c34c64dfd5acad91f9a73d
-  languageName: node
-  linkType: hard
-
 "range-parser@npm:~1.2.1":
   version: 1.2.1
   resolution: "range-parser@npm:1.2.1"
@@ -13794,7 +13780,6 @@ __metadata:
     "@testing-library/user-event": ^13.5.0
     "@types/eslint": ^8
     "@types/jest-plugin-context": ^2
-    "@types/randomcolor": ^0
     "@types/react": ~17.0.21
     "@types/react-native": ~0.64.12
     "@typescript-eslint/eslint-plugin": ^5.12.1
@@ -13830,7 +13815,6 @@ __metadata:
     jest-expo: ^44.0.1
     jest-plugin-context: ^2.9.0
     lint-staged: ^12.3.4
-    randomcolor: ^0.6.2
     react: 17.0.1
     react-dom: 17.0.1
     react-native: 0.64.3

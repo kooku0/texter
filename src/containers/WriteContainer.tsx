@@ -29,17 +29,9 @@ function WriteContainer() {
 
   const { sentence, title, link } = state;
 
-  const handleChangeSentence = (value: string) => setState({
+  const handleChange = (key: keyof State) => (value: string) => setState({
     ...state,
-    sentence: value,
-  });
-  const handleChangeTitle = (value: string) => setState({
-    ...state,
-    title: value,
-  });
-  const handleChangeLink = (value: string) => setState({
-    ...state,
-    link: value,
+    [key]: value,
   });
 
   const handlePressComplete = () => mutate(state);
@@ -57,19 +49,19 @@ function WriteContainer() {
           <SubTitle>문장</SubTitle>
           <SentenceInputArea
             sentence={sentence}
-            onChangeSentence={handleChangeSentence}
+            onChangeSentence={handleChange('sentence')}
           />
         </SentanceSection>
         <Section>
           <SubTitle>출처</SubTitle>
           <Input
             text={title}
-            onChangeText={handleChangeTitle}
+            onChangeText={handleChange('title')}
             placeholder="제목"
           />
           <Input
             text={link}
-            onChangeText={handleChangeLink}
+            onChangeText={handleChange('link')}
             placeholder="링크"
           />
         </Section>

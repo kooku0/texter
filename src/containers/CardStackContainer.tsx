@@ -8,7 +8,6 @@ import CardStack from '@app/components/CardStack';
 import { checkRefNull } from '@app/utils';
 
 import styled from '@emotion/native';
-import randomColor from 'randomcolor';
 
 interface Props {
   sentences: SentenceResponse[];
@@ -16,10 +15,6 @@ interface Props {
 
 function CardStackContainer({ sentences }: Props) {
   const stackRef = useRef<Swiper<any>>(null);
-  const items = sentences.map((item) => ({
-    text: item.sentence,
-    background: randomColor(),
-  }));
 
   const handlePressPass = () => checkRefNull(stackRef)((swiper) => swiper.swipeLeft());
   const handlePressStore = () => checkRefNull(stackRef)((swiper) => swiper.swipeRight());
@@ -29,7 +24,7 @@ function CardStackContainer({ sentences }: Props) {
       <CardStackWrapper>
         <CardStack
           ref={stackRef}
-          cards={items}
+          cards={sentences}
           renderCard={Card}
         />
       </CardStackWrapper>

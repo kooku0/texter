@@ -30,6 +30,7 @@ function CardStack<CardProps>(props: Props<CardProps>, ref: ForwardedRef<Swiper<
       swipeBackCard
       disableTopSwipe
       disableBottomSwipe
+      verticalSwipe={false}
     />
   );
 }
