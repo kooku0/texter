@@ -11,7 +11,7 @@ on:
         required: true
         
 env:
-  RELEASE: "${{ github.ref_name }}-text"
+  RELEASE: ${{ github.ref_name }}-text
   
 jobs:
   deploy:
