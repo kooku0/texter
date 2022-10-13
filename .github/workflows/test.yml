@@ -1,0 +1,40 @@
+name: env-test
+
+on:
+  push:
+    branches: test-branch
+
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: Release tag in "vYYYYMMDDHHMM" format ex. "v202206071630"
+        required: true
+        
+env:
+  RELEASE: "${{ github.ref_name }}-text"
+  
+jobs:
+  deploy:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Get Time
+      id: time
+      uses: nanzm/get-time-action@v1.1
+      with:
+        timeZone: 9
+        format: 'YYYY:MM:DD-HH:mm:ss'
+    - name: Set Sentry Release env file
+      run: |
+        echo SENTRY_RELEASE=${{ steps.time.outputs.time }}-text >> .env
+        cat .env
+
+    - name: Set Sentry Release env file
+      run: |
+        echo 
+        touch .env
+        echo RELEASE=$RELEASE-text >> .env
+        cat .env
